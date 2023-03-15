@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Purchase</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" style="height: 30;" type="icon" href="data:image/png;base64,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">
+  </head>
+  <style>
+    body {
+      /* background-image: url("hero_background__ep8j6kim532a_large.png"); */
+      font-family: "Source Sans Pro", sans-serif;
+      justify-content: center;
+      /* align-items: center; */
+      /* display: flex; */
+    }
+    body{
+      background:#f8f8f9;
+    }
+    h2 {
+        color:#1d1d1f;
+        text-align: center;
+        padding-bottom: 1%;
+        
+    }
+    p{
+        text-align:justify;
+        padding-left: 5%;
+        color:#224;
+        font-size: 20px;
+    }
+    .container {
+      position:absolute;
+      display: contents;
+    }
+    .container1 .card {
+      position: relative;
+      /* align=center; */
+      color:#1d1d1f;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .card{
+        max-width: 600px;
+        min-height: 930px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        background: #fff;
+
+        max-width: 1000px;
+        height: 300px;
+        padding: 35px;
+        border: 1px solid rgba(255, 255, 255, .25);
+        border-radius: 20px;
+        background-color:#fff;
+        /* background-color: rgba(255,255,255,0.45); */
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+        backdrop-filter: blur(15px);
+    }
+    h4{
+        text-align: center;
+        color:#1d1d1f;
+        font-size: 30px;
+    }
+    .butt{
+        background-color:white;
+        border: none;
+        color:black;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 1px 190px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255,255,255,0.45);
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+        cursor:pointer;
+        border-radius: 50px;
+        
+    }
+    .butt{
+      background-color:white;
+    }
+    a{
+      color:black;
+    }
+    .butt:hover{
+      background-color:#f8f8f9;
+    }
+    select{
+      font-size: 20px;
+      color: white;
+      background-color: #1d1d1f;
+      text-align: center;
+      border-radius: 10px;
+      padding-left: 1%;
+      
+    }
+    h1{
+      text-align:justify;
+      padding-left: 5%;
+    }
+    .responsive{
+      width: 100%;
+      height: auto;
+    }
+  </style>
+  <body class="responsive">
+    <h2>Place Your Order</h2>
+    <form action="">
+    <div align="center" class="container1">
+      <div class="card">
+        <div class="contentbox">
+          <h4>Your Details</h4>
+          <div class="imgBx">
+            <img align="right" style="padding-right: 10%; padding-top: 5%;" height="200" src="https://images.stockx.com/images/adidas-Yeezy-700-Mauve-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1613669342&q=75" alt="yeezy">
+          </div>
+          <p><b>First Name</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="inp" required First Name="Fname" type="FirstName" align="end" /></p>
+          <br>
+          
+          
+          <p><b> Last Name</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input required Last Name="Lname" type="LastName" /></p>
+          <br>
+          
+          <p><b> E-mail address</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" required email="email" name="email" id="address"></p>
+      
+          
+          <h1 align="right" style="font-family:Arial, Helvetica, sans-serif;">adidas yeezy 700</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <select class="select" required size="size" name="size" id="size">
+            <option value="size">SIZE</option>
+            <option value="7">7</option>
+            <option value="7.5">7.5</option>
+            <option value="8">8</option>
+            <option value="8.5">8.5</option>
+            <option value="9">9</option>
+          </select>
+          
+          <p><b> Phone Number</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" required tel="phno" name="Phone" id="number"></p>
+          <br>
+
+          <p><b> Residential Address</b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" required add="resaddr" name="address" id="Residential"> </p>
+          <br>
+
+          <p><b> City</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city" id="address"></p>
+          <br>
+          
+          <p> <b>Alternate Ph. Number</b> <input type="tel" required altph="altph" name="Alternate" id="phnumber"></p>
+          <br>
+          
+          <br>
+          <button class="butt" type="submit" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;"><a style="text-decoration: none;" href="payment.html">SUBMIT</a></button>
+
+
+        </div>
+      </div>
+    </div></form>
+  </body>
+</html>
