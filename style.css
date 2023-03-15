@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    justify-content: center;
+    min-height: 100vh;
+}
+.responsive{
+    width: 100px;
+    height: auto;
+}
+nav{
+    text-align: center;
+    padding-top: 30;
+}
+a{
+    color:black;
+    background-color:white;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.adidas{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color:white;
+    background-color: black;
+}
+.Nike{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+}
+.converse{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+}
+.adidas:hover{
+    background-color: black;
+    color: gainsboro;
+}
+.Nike:hover{
+    background-color: black;
+    color: gainsboro;
+}
+.converse:hover{
+    background-color: black;
+    color: gainsboro;
+}
+a:hover{
+    background-color:gainsboro;
+}
+select{
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color: darkorange;
+    font-family: 'Tilt Prism', cursive;
+    text-align: center;
+}
+.container{
+    position: relative;
+    display: flex;
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background:black;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.buy{
+    font-size: x-small;
+}
+.container .card .contentbox .buy{
+    font-size: 20%;
+} 
+.butt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border-radius: 50px;
+    background-color:white;
+}  
+.butt:hover{
+    background-color:gainsboro;
+}  
